@@ -1,0 +1,186 @@
+
+ 21 . What is inheritance?
+ Ans : Inheritance means we are inherit one class to another class.
+
+ 22 . Which inheritance is not supported by Dart? Why? B3. What is advantage of inheritance?
+ Ans : Multiple Inheritance is not supported in dart becuase This can cause confusion over which properties or methods
+       should be inherited from the base class.
+       Advantages of inheritance is code reusabilty.
+
+ 23 . Difference between inheritance and encapsulation.
+      Difference between inheritance and abstraction.
+ Ans :
+        Inheritance : Inheritance means that one class inherit other class.
+                      Inheritance is given code reusability.
+                      Inheritance purpose is promote code reusability.
+
+        Encapsulation :
+                        Encapsulation means that data wrapping and methods in to single unit.
+                        Encapsulation is given Data integrity.
+                        Encapsulation purpose is protect internal state.
+
+        Abstraction :
+                        An Abstract class in dart is a class that cannot be instantiated directly.
+                        Abstract Classes can have abstract methods.
+                        We use abstract keyword to create abstract class.
+
+ 24 . Difference between inheritance and polymorphism.
+  Ans :
+         Inheritance : Inheritance means that one class inherit other class.
+                              Inheritance is given code reusability.
+                              Inheritance purpose is promote code reusability.
+
+         Polymorphism :
+                        Polymorphism is a concept in OOP that allows objects of different classes to be
+                        treated as objects of a common superclass.
+                        Polymorphism given flexibility service.
+
+ 25 . Can we override static method in Dart?
+ Ans : We can not override a static methods in a sub class.
+
+ 26 . Can we overload static method in Dart?
+ Ans : We can not support method overloading concepts in dart.
+
+ 27 . Can a class implement more than one interface?
+ Ans :
+        yes, A class implements more than one interface in dart.
+
+     + Can a class extend more than one class in Dart?
+ Ans :
+        No , A class is not extends more than one class in dart.
+
+ 28 . Can an interface extend more than one interface in Dart?
+ Ans : Yes, in Dart, an interface can extend more than one interface.
+
+ 29 . What will happen if a class implements two interfaces
+      and they both have a method with same name and
+      signature?
+ Ans : If a class implements two interfaces that both have a method with the same name and signature,
+       the class must provide an implementation for that method.
+
+
+ 30 . Can we pass an object of a subclass to a method
+      expecting an object ofthe super class? B14.
+ Ans : Yes, you can pass an object of a subclass to a method expecting an object of the superclass.
+
+     +Are static members inherited to sub classes?
+ Ans :   No static members are not inherited to sub classes.
+
+
+ 31 . What happens if the parent and the child class have a
+      field with same identifier?
+ Ans : If both the parent class and the child class have a field with the same identifier,
+       the child class's field will hide the parent class's field.
+
+     + Are constructors and initializers also inherited to sub classes?
+ Ans : In Dart, constructors are not inherited by subclasses. However, a subclass can call a constructor of its superclass using the super keyword.
+       Initializers in the superclass constructor can be executed as part of the subclass's constructor initialization list.
+
+
+ 32 . How do you restrict a member of a class from inheriting by its subclass?
+ Ans : Using final keyword you are restrict a member of a class from inheriting by its subclass.
+
+ 33 . How do you implement multiple inheritance in Dart?
+ Ans : Multiple inheritance is not support in dart.
+
+ 34 . Can a class extend by itself in Dart?
+ Ans : No, a class cannot extend itself in Dart.
+
+ 35 . How do you override a private method in Dart?
+ Ans : In Dart, private methods are prefixed with an underscore (_)
+       and are only accessible within the same library.
+
+ 36 . When to overload a method in Dart and when to override it?
+ Ans :
+        Method overloading in Dart is not natively supported as it is in some other languages like Java.
+        Method overriding in Dart is used when you want to provide a specific implementation of a method
+        that is already defined in a superclass.
+
+ 37 . What the order is of extends and implements keyword on Dart class declaration?
+ Ans : extends: Used to inherit from a single superclass. A class can only extend one other class.
+       implements: Used to implement one or more interfaces. A class can implement multiple interfaces.
+
+ 38 . How do you prevent overriding a Dart method without using the final modifier?
+ Ans : In Dart, to prevent a method from being overridden without using the final modifier,
+        you can use the @sealed annotation from the meta package.
+
+ 39 . What are the rules of method overriding in Dart?
+ Ans : 1. same method name
+       2. same parameter
+       3. same specific return type
+
+ 40 . Difference between method overriding and overloading in Dart.
+ Ans : Method overriding : Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.
+                           This is a fundamental concept in inheritance and polymorphism.
+
+       Method overloading : Dart does not support traditional method overloading, as seen in languages like Java or C++. However,
+                            similar behavior can be achieved using optional parameters (named or positional) in method definitions.
+
+ 41 . What happens when a class implements two interfaces and both declare field (variable) with same name?
+ Ans : When a class in Dart implements two interfaces that both declare a field (variable) with the same name, Dart treats these fields as separate and distinct. This is because Dart does not support field implementation in interfaces directly; interfaces in Dart can only declare method signatures and not fields. However, you can encounter
+       similar issues when two interfaces declare methods (getters and setters) with the same name.
+
+
+ 42 . Can a subclass instance method override a superclass static method?
+ Ans : In Dart, a subclass instance method cannot override a superclass static method. Static methods belong to the class itself
+       rather than any instance of the class, and instance methods operate on specific instances of the class.
+
+ 43 . Can a subclass static method hide superclass instance method?
+ Ans : In Dart, a subclass static method cannot "hide" a superclass instance method in the traditional sense of method overriding
+       because static methods and instance methods operate in different contexts.
+
+ 44 . Can a superclass access subclass member?
+ Ans : In Dart, a superclass cannot directly access members (fields, methods, or properties) of its subclass.
+
+
+ 45 . Difference between object oriented and object based language.
+ Ans : Object-Oriented Languages ::
+                    Object-oriented languages are those that fully support the principles of object-oriented programming (OOP),
+       which are encapsulation, inheritance, and polymorphism.
+
+       Object-Based Languages
+                    Object-based languages support the use of objects and encapsulation but do not support all the features of full
+       object-oriented programming. These languages typically lack support for inheritance and polymorphism.
+
+ 46 . Create a program using List.
+ Ans : void main() {
+         List<int> numbers = [1, 2, 3, 4, 5];
+         numbers.add(6);
+         print('List of numbers: $numbers');
+         numbers.remove(3);
+         for (var number in numbers) {
+           print(number);
+         }
+       }
+
+ 47 . Create a program using Set
+ Ans : void main() {
+
+         Set<int> numbers = {5, 7}; // Initialize with two numbers
+         numbers.add(10);
+         numbers.add(15);
+         print('Numbers in the set: $numbers');
+
+         int sum = numbers.reduce((a, b) => a + b);
+         print('Sum of all numbers in the set: $sum');
+       }
+
+
+ 48 .
+ Ans : void main() {
+         Map<String, int> numbers = {
+           'number1': 5,
+           'number2': 7,
+         };
+
+         print(' map: $numbers');
+
+         int number1 = numbers ?? 0;
+         int number2 = numbers ?? 0;
+
+         int sum = number1 + number2;
+
+         print('Sum of $number1 and $number2 is: $sum');
+       }
+
+
